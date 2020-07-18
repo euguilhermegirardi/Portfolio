@@ -16,6 +16,7 @@ export default function Nav() {
                className="nav__anchor"
                href="https://www.linkedin.com/in/guilherme-girardi-1aa6a1185/"
                target="_blank"
+               rel="noopener noreferrer"
             >
                <FaLinkedinIn className="nav__icon" />
             </a>
@@ -23,6 +24,7 @@ export default function Nav() {
                className="nav__anchor"
                href="https://www.instagram.com/euguilhermegirardi/?hl=en"
                target="_blank"
+               rel="noopener noreferrer"
             >
                <FaInstagram className="nav__icon" />
             </a>
@@ -30,6 +32,7 @@ export default function Nav() {
                className="nav__anchor"
                href="https://github.com/euguilhermegirardi"
                target="_blank"
+               rel="noopener noreferrer"
             >
                <FaGithub className="nav__icon" />
             </a>

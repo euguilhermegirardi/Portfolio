@@ -1,0 +1,33 @@
+.nav {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+
+   background-color: #081229;
+   padding: 0.8rem 2rem;
+
+   .nav__icons {
+      display: flex;
+      justify-content: space-between;
+      min-width: 10rem;
+
+      .nav__anchor {
+         color: #34cb79;
+
+         .nav__icon {
+            height: 1.8rem;
+            width: 1.8rem;
+         }
+      }
+   }
+
+   .nav__menu {
+      display: flex;
+
+      .nav__icon--menu {
+         height: 1.5rem;
+         width: 1.5rem;
+      }
+   }
+}

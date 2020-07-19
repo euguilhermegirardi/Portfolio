@@ -3,8 +3,11 @@ import { FaDesktop, FaDatabase, FaSteamSquare, FaCheck } from "react-icons/fa";
 
 import Nav from "../../components/Nav";
 import "../../scss/pages/Home/_home.scss";
+import "../../scss/utils/_utilities.scss";
 import profile from "../../assets/Home/profile.jpeg";
-import globo from "../../assets/Home/globo-home-page.png";
+import theSun from "../../assets/Home/the-irish-sun.png";
+import catalog from "../../assets/Home/catalog-of-books.png";
+import knots from "../../assets/Home/knots-4-you.png";
 
 export default function Home() {
    return (
@@ -22,7 +25,7 @@ export default function Home() {
                   skills in HTML, CSS, and JavaScript but, currently, I am
                   studying ReactJS, Node.js, and React Native.
                </p>
-               <button className="header__btn" type="button">
+               <button className="btn" type="button">
                   Hire Me
                </button>
             </div>
@@ -102,7 +105,7 @@ export default function Home() {
                </ul>
             </div>
 
-            <div className="main__skill">
+            <div className="main__skill main__skill--last">
                <div className="main__icon-container">
                   <FaSteamSquare className="main__icon-main" />
                </div>
@@ -135,13 +138,76 @@ export default function Home() {
          </main>
 
          <section className="featured">
+            <h2 className="featured__title">Featured Projects</h2>
+
             <div className="featured__card">
-               <img className="feature__img" src={globo} alt="" />
-               <h3 className="featured__project">the-irish-sun-home-page</h3>
-               <span className="featured__techs">HTML</span>
-               <span className="featured__techs">CSS</span>
-               <span className="featured__techs">VanillaJS</span>
+               <img
+                  className="feature__img"
+                  src={theSun}
+                  alt="the-irish-sun-home-page.png"
+               />
+               <div className="featured__txt-container">
+                  <h3 className="featured__project">The Irish Sun</h3>
+                  <div className="featured__techs-container">
+                     <span className="featured__techs">HTML</span>
+                     <span className="featured__techs">CSS</span>
+                     <span className="featured__techs">VanillaJS</span>
+                  </div>
+               </div>
             </div>
+
+            <div className="featured__card">
+               <img
+                  className="feature__img"
+                  src={catalog}
+                  alt="the-irish-sun-home-page.png"
+               />
+               <div className="featured__txt-container">
+                  <h3 className="featured__project">Catalog of Books</h3>
+                  <div className="featured__techs-container">
+                     <span className="featured__techs">ReactJS</span>
+                     <span className="featured__techs">React Hooks</span>
+                     <span className="featured__techs">React Hook Form</span>
+                  </div>
+               </div>
+            </div>
+
+            <div className="featured__card">
+               <img
+                  className="feature__img"
+                  src={knots}
+                  alt="the-irish-sun-home-page.png"
+               />
+               <div className="featured__txt-container">
+                  <h3 className="featured__project">Knots 4 You</h3>
+                  <div className="featured__techs-container">
+                     <span className="featured__techs">ReactJS</span>
+                     <span className="featured__techs">React Hooks</span>
+                     <span className="featured__techs">Redux-Saga</span>
+                  </div>
+               </div>
+            </div>
+
+            <button className="btn">View all projects</button>
+         </section>
+
+         <section className="info">
+            <img className="info__img" src={profile} alt="profile.jpeg" />
+            <div className="info__txt-container">
+               <h2 className="info__h2">
+                  Interested in hiring me for your project?
+               </h2>
+               <p className="info__p">
+                  Looking for an experienced frontend developer to build your
+                  web app or ship your software product? To start an initial
+                  chat, just drop me an email at{" "}
+                  <a className="info__email" href="/">
+                     girardi.gui@icloud.com
+                  </a>{" "}
+                  or use the <a href="/">form on the contact page</a>.
+               </p>
+            </div>
+            <button className="btn">Let's Talk!</button>
          </section>
       </>
    );

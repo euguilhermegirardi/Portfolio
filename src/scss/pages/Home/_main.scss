@@ -60,6 +60,8 @@
       }
 
       .main__ul {
+         width: 100%;
+
          .main__li {
             list-style: none;
             display: flex;
@@ -69,7 +71,7 @@
             .main__item {
                display: flex;
                height: 2rem;
-               width: 100%;
+               margin: 0 2rem;
 
                .main__svg {
                   height: 1.2rem;

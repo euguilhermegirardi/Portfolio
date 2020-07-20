@@ -56,23 +56,23 @@ export default function Main() {
                <li className="main__li">
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">React/Redux/Redux-Saga</p>
+                     <p className="main__p">Node.js</p>
                   </div>
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">JavaScript</p>
+                     <p className="main__p">Express.js</p>
                   </div>
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">Gulp</p>
+                     <p className="main__p">MongoDB</p>
                   </div>
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">CSS/SCSS</p>
+                     <p className="main__p">SQLite</p>
                   </div>
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">HTML</p>
+                     <p className="main__p">Knex.js</p>
                   </div>
                </li>
             </ul>
@@ -87,23 +87,15 @@ export default function Main() {
                <li className="main__li">
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">React/Redux/Redux-Saga</p>
+                     <p className="main__p">TypeScript</p>
                   </div>
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">JavaScript</p>
+                     <p className="main__p">MVC Design Pattern</p>
                   </div>
                   <div className="main__item">
                      <FaCheck className="main__svg" />
-                     <p className="main__p">Gulp</p>
-                  </div>
-                  <div className="main__item">
-                     <FaCheck className="main__svg" />
-                     <p className="main__p">CSS/SCSS</p>
-                  </div>
-                  <div className="main__item">
-                     <FaCheck className="main__svg" />
-                     <p className="main__p">HTML</p>
+                     <p className="main__p">Insomnia</p>
                   </div>
                </li>
             </ul>

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import {
-   FaLinkedinIn,
-   FaInstagram,
-   FaGithub,
-   FaAlignJustify,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import CheeseburgerMenu from "cheeseburger-menu";
 import HamburgerMenu from "react-hamburger-menu";
 
@@ -54,10 +50,18 @@ export default function Nav() {
          <div className="nav__menu">
             <CheeseburgerMenu isOpen={menu.menuOpen} closeCallback={closeMenu}>
                <ul className="nav__dropdown">
-                  <li className="nav__dropdown-item">Home</li>
-                  <li className="nav__dropdown-item">Projects</li>
-                  <li className="nav__dropdown-item">Resume</li>
-                  <li className="nav__dropdown-item">Contact</li>
+                  <Link to="/">
+                     <li className="nav__dropdown-item">Home</li>
+                  </Link>
+                  <Link to="/projects">
+                     <li className="nav__dropdown-item">Projects</li>
+                  </Link>
+                  <Link to="/resume">
+                     <li className="nav__dropdown-item">Resume</li>
+                  </Link>
+                  <Link to="/contact">
+                     <li className="nav__dropdown-item">Contact</li>
+                  </Link>
                </ul>
             </CheeseburgerMenu>
 

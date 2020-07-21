@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../../scss/pages/Home/_featured.scss";
 import theSun from "../../../assets/Features/the-irish-sun.png";
@@ -8,7 +9,7 @@ import knots from "../../../assets/Features/knots-4-you.png";
 export default function Featured() {
    return (
       <section className="featured">
-         <h2 className="featured__title">Featured Projects</h2>
+         <h2 className="h2">Featured Projects</h2>
 
          <div className="featured__card">
             <img
@@ -58,7 +59,9 @@ export default function Featured() {
             </div>
          </div>
 
-         <button className="btn">View all projects</button>
+         <Link to="/projects" className="btn-container">
+            <button className="btn">View all projects</button>
+         </Link>
       </section>
    );
 }

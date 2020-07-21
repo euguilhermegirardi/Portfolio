@@ -1,3 +1,9 @@
+// Button
+.btn-container {
+   text-align: center;
+   width: 100%;
+}
+
 .btn {
    width: 80%;
    height: 3rem;
@@ -8,4 +14,15 @@
    letter-spacing: 1px;
    background-color: #152a61;
    color: #34cb79;
+}
+
+// Text
+.h2 {
+   font-size: 2rem;
+   margin-bottom: 2rem;
+}
+
+.paragraph {
+   text-align: center;
+   line-height: 21px;
 }

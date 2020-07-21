@@ -12,7 +12,7 @@ export default function Info() {
             <h2 className="info__h2">
                Interested in hiring me for your project?
             </h2>
-            <p className="info__p">
+            <p className="paragraph">
                Looking for an experienced frontend developer to build your web
                app or ship your software product? To start an initial chat, just
                drop me an email at{" "}

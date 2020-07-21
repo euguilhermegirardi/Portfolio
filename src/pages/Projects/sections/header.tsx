@@ -6,8 +6,8 @@ export default function Header() {
    return (
       <>
          <header className="header">
-            <h2 className="header__h2">Projects</h2>
-            <p className="header__p">
+            <h2 className="h2">Projects</h2>
+            <p className="paragraph">
                In-depth Case Studies to show you what I can offer and how I work
             </p>
          </header>

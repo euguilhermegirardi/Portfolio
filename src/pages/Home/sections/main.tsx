@@ -6,8 +6,8 @@ import "../../../scss/pages/Home/_main.scss";
 export default function Main() {
    return (
       <main className="main">
-         <h2 className="main__h2">Skills Overview</h2>
-         <p className="main__p">
+         <h2 className="h2">Skills Overview</h2>
+         <p className="paragraph main__p">
             I have more than 2 years' experience building rich web applications.
             Bellow is a quick overview of my main technical skill sets and tools
             I use. Want to find out more about my experience?{" "}

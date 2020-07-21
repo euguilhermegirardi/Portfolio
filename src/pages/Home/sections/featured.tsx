@@ -1,9 +1,9 @@
 import React from "react";
 
 import "../../../scss/pages/Home/_featured.scss";
-import theSun from "../../../assets/Home/the-irish-sun.png";
-import catalog from "../../../assets/Home/catalog-of-books.png";
-import knots from "../../../assets/Home/knots-4-you.png";
+import theSun from "../../../assets/Features/the-irish-sun.png";
+import catalog from "../../../assets/Features/catalog-of-books.png";
+import knots from "../../../assets/Features/knots-4-you.png";
 
 export default function Featured() {
    return (

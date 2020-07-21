@@ -20,7 +20,6 @@
       justify-content: center;
       background-color: #fff;
       border-radius: 1px;
-      margin-bottom: 2.5rem;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 
       .feature__img {
@@ -58,5 +57,9 @@
             }
          }
       }
+   }
+
+   .featured__card:not(:last-child) {
+      margin-bottom: 2.5rem;
    }
 }

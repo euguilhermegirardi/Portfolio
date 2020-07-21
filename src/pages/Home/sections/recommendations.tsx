@@ -3,9 +3,9 @@ import TinySlider from "tiny-slider-react";
 import { FaQuoteLeft, FaLinkedinIn } from "react-icons/fa";
 
 import "../../../scss/pages/Home/_recommendations.scss";
-import thiago from "../../../assets/Home/thiago.jpeg";
-import daniel from "../../../assets/Home/daniel.jpeg";
-import bruno from "../../../assets/Home/bruno.jpeg";
+import thiago from "../../../assets/Recommendations/thiago.jpeg";
+import daniel from "../../../assets/Recommendations/daniel.jpeg";
+import bruno from "../../../assets/Recommendations/bruno.jpeg";
 
 export default function Recommendations() {
    const settings = {

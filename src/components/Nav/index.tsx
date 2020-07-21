@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import {
    FaLinkedinIn,
    FaInstagram,
    FaGithub,
    FaAlignJustify,
 } from "react-icons/fa";
+import CheeseburgerMenu from "cheeseburger-menu";
+import HamburgerMenu from "react-hamburger-menu";
 
 import "../../scss/components/_navbar.scss";
 
 export default function Nav() {
+   const [menu, setMenu] = useState({
+      menuOpen: false,
+   });
+
+   function openMenu() {
+      setMenu({ menuOpen: true });
+   }
+
+   function closeMenu() {
+      setMenu({ menuOpen: false });
+   }
+
    return (
       <nav className="nav">
          <div className="nav__icons">
@@ -38,7 +52,26 @@ export default function Nav() {
             </a>
          </div>
          <div className="nav__menu">
-            <FaAlignJustify className="nav__icon--menu" />
+            <CheeseburgerMenu isOpen={menu.menuOpen} closeCallback={closeMenu}>
+               <ul className="nav__dropdown">
+                  <li className="nav__dropdown-item">Home</li>
+                  <li className="nav__dropdown-item">Projects</li>
+                  <li className="nav__dropdown-item">Resume</li>
+                  <li className="nav__dropdown-item">Contact</li>
+               </ul>
+            </CheeseburgerMenu>
+
+            <HamburgerMenu
+               isOpen={menu.menuOpen}
+               menuClicked={openMenu}
+               width={25}
+               height={17}
+               strokeWidth={3}
+               rotate={0}
+               color="#34cb79"
+               borderRadius={0}
+               animationDuration={0.5}
+            />
          </div>
       </nav>
    );

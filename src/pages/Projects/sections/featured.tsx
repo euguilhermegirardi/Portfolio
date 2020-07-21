@@ -34,7 +34,7 @@ export default function Featured() {
                   alt="the-irish-sun-home-page.png"
                />
                <div className="featured__txt-container">
-                  <h3 className="featured__project">The Irish Sun</h3>
+                  <h3 className="featured__project">The Irish Times</h3>
                   <div className="featured__techs-container">
                      <span className="featured__techs">HTML</span>
                      <span className="featured__techs">CSS</span>
@@ -50,7 +50,7 @@ export default function Featured() {
                   alt="the-irish-sun-home-page.png"
                />
                <div className="featured__txt-container">
-                  <h3 className="featured__project">The Irish Sun</h3>
+                  <h3 className="featured__project">Globo</h3>
                   <div className="featured__techs-container">
                      <span className="featured__techs">HTML</span>
                      <span className="featured__techs">CSS</span>
@@ -98,7 +98,7 @@ export default function Featured() {
                   alt="the-irish-sun-home-page.png"
                />
                <div className="featured__txt-container">
-                  <h3 className="featured__project">Catalog of Books</h3>
+                  <h3 className="featured__project">E-Commcerce</h3>
                   <div className="featured__techs-container">
                      <span className="featured__techs">ReactJS</span>
                      <span className="featured__techs">Class Component</span>

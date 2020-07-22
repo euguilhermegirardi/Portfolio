@@ -1,5 +1,6 @@
 import React from "react";
 
+import "../../../scss/pages/Home/_featured.scss";
 import theSun from "../../../assets/Features/the-irish-sun.png";
 import theIrish from "../../../assets/Features/the-irish-times.png";
 import globo from "../../../assets/Features/globo.png";
@@ -13,7 +14,7 @@ export default function Featured() {
          <section className="featured">
             <div className="featured__card">
                <img
-                  className="feature__img"
+                  className="featured__img"
                   src={theSun}
                   alt="the-irish-sun-home-page.png"
                />
@@ -29,7 +30,7 @@ export default function Featured() {
 
             <div className="featured__card">
                <img
-                  className="feature__img"
+                  className="featured__img"
                   src={theIrish}
                   alt="the-irish-sun-home-page.png"
                />
@@ -45,7 +46,7 @@ export default function Featured() {
 
             <div className="featured__card">
                <img
-                  className="feature__img"
+                  className="featured__img"
                   src={globo}
                   alt="the-irish-sun-home-page.png"
                />
@@ -61,7 +62,7 @@ export default function Featured() {
 
             <div className="featured__card">
                <img
-                  className="feature__img"
+                  className="featured__img"
                   src={knots}
                   alt="the-irish-sun-home-page.png"
                />
@@ -77,7 +78,7 @@ export default function Featured() {
 
             <div className="featured__card">
                <img
-                  className="feature__img"
+                  className="featured__img"
                   src={catalog}
                   alt="the-irish-sun-home-page.png"
                />
@@ -93,7 +94,7 @@ export default function Featured() {
 
             <div className="featured__card">
                <img
-                  className="feature__img"
+                  className="featured__img"
                   src={ecommerce}
                   alt="the-irish-sun-home-page.png"
                />

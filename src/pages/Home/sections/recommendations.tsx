@@ -20,7 +20,9 @@ export default function Recommendations() {
          <section className="card-container">
             <TinySlider settings={settings}>
                <div className="card">
-                  <FaQuoteLeft className="card__quote" />
+                  <div className="card__quote-container">
+                     <FaQuoteLeft className="card__quote" />
+                  </div>
                   <p className="card__txt">
                      I had the pleasure to introduce programming for Guilherme,
                      he collaborated on countless web projects. I've never
@@ -51,7 +53,9 @@ export default function Recommendations() {
                </div>
 
                <div className="card">
-                  <FaQuoteLeft className="card__quote" />
+                  <div className="card__quote-container">
+                     <FaQuoteLeft className="card__quote" />
+                  </div>
                   <p className="card__txt">
                      If you look for a young passionate, aspiring developer take
                      a closer look at him. I found him on Instagram and was
@@ -82,7 +86,9 @@ export default function Recommendations() {
                </div>
 
                <div className="card">
-                  <FaQuoteLeft className="card__quote" />
+                  <div className="card__quote-container">
+                     <FaQuoteLeft className="card__quote" />
+                  </div>
                   <p className="card__txt">
                      Guilherme Girardi is a high-motivated and fast-learner
                      team-player. On the projects we have worked on, he had

@@ -28,6 +28,7 @@
       font-weight: 500;
       line-height: 1.3rem;
       height: 13rem;
+      width: 20rem;
    }
 
    .card__avatar {
@@ -95,8 +96,13 @@
    z-index: 10000;
    font-size: 3.2rem;
 
-   @media screen and (max-width: 375px) {
+   @media screen and (min-width: 375px) {
       left: 2rem;
+      top: 18.5rem;
+   }
+
+   @media screen and (min-width: 414px) {
+      left: 3rem;
       top: 18.5rem;
    }
 }
@@ -115,8 +121,13 @@
    z-index: 10000;
    font-size: 3.2rem;
 
-   @media screen and (max-width: 375px) {
+   @media screen and (min-width: 375px) {
       left: 13rem;
       top: 18.5rem;
+   }
+
+   @media screen and (min-width: 414px) {
+      left: 14.6rem;
+      top: 18.4rem;
    }
 }

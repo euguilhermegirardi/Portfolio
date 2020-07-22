@@ -62,7 +62,7 @@
                font-weight: 400;
                height: 2.4rem;
                width: 7.5rem;
-               margin: 1rem 0;
+               margin-top: 1.5rem;
             }
          }
       }
@@ -86,6 +86,7 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+            max-width: 290px;
 
             .featured__techs {
                font-size: 0.9rem;

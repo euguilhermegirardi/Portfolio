@@ -1,0 +1,83 @@
+.resume {
+   display: flex;
+   flex-direction: column;
+   padding: 3rem 1rem;
+
+   .resume__timeline {
+      position: relative;
+      padding-left: 2rem;
+      margin-top: 1rem;
+
+      &::before {
+         content: "";
+         display: inline-block;
+         width: 3px;
+         height: 100%;
+         background: #c8cfd8;
+         left: 6px;
+         top: 10px;
+         position: absolute;
+      }
+
+      .resume__article {
+         position: relative;
+
+         &:not(:first-child) {
+            margin-top: 2rem;
+         }
+
+         &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -36px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            border: 4px solid #6f8098;
+            background: white;
+            border-radius: 50%;
+         }
+
+         .resume__article-title {
+            display: flex;
+
+            .resume__article-h4 {
+               font-size: 1.2rem;
+               margin: 0.7rem 0;
+            }
+         }
+
+         .resume__article-company {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .resume__article-small {
+               font-size: 1rem;
+               font-weight: 400;
+            }
+         }
+
+         .resume__article-date {
+            display: flex;
+            align-items: center;
+
+            .resume__article-span {
+               font-size: 0.875rem;
+               font-weight: 100;
+            }
+         }
+      }
+
+      .resume__description {
+         display: flex;
+         margin-top: 0.5rem;
+
+         .resume__p {
+            text-align: initial;
+            letter-spacing: 1px;
+         }
+      }
+   }
+}

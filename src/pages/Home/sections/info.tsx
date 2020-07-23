@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../../scss/pages/Home/_info.scss";
 import profile from "../../../assets/Home/profile.jpeg";
@@ -26,7 +27,9 @@ export default function Info() {
                .
             </p>
          </div>
-         <button className="btn">Let's Talk!</button>
+         <Link className="btn-container" to="/contact">
+            <button className="btn">Let's Talk!</button>
+         </Link>
       </section>
    );
 }

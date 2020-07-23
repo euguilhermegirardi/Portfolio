@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../../scss/pages/Home/_header.scss";
 import profile from "../../../assets/Home/profile.jpeg";
@@ -17,9 +18,11 @@ export default function Header() {
                CSS, and JavaScript but, currently, I am studying ReactJS,
                Node.js, and React Native.
             </p>
-            <button className="btn" type="button">
-               Hire Me
-            </button>
+            <Link className="btn-container" to="/contact">
+               <button className="btn" type="button">
+                  Hire Me
+               </button>
+            </Link>
          </div>
       </header>
    );

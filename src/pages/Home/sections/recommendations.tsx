@@ -6,6 +6,7 @@ import "../../../scss/pages/Home/_recommendations.scss";
 import thiago from "../../../assets/Recommendations/thiago.jpeg";
 import daniel from "../../../assets/Recommendations/daniel.jpeg";
 import bruno from "../../../assets/Recommendations/bruno.jpeg";
+import felipe from "../../../assets/Recommendations/felipe.jpeg";
 
 export default function Recommendations() {
    const settings = {
@@ -77,7 +78,7 @@ export default function Recommendations() {
                         className="card__link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/thiago-baptistella-29b52571/"
+                        href="https://www.linkedin.com/in/daniel-murth-b6b86a188/"
                      >
                         <FaLinkedinIn className="card__link-icon" />
                         <p className="card__link-p">LinkedIn Profile</p>
@@ -106,7 +107,40 @@ export default function Recommendations() {
                         className="card__link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/thiago-baptistella-29b52571/"
+                        href="https://www.linkedin.com/in/bruno-miguel-7210b814a/"
+                     >
+                        <FaLinkedinIn className="card__link-icon" />
+                        <p className="card__link-p">LinkedIn Profile</p>
+                     </a>
+                  </div>
+               </div>
+
+               <div className="card">
+                  <div className="card__quote-container">
+                     <FaQuoteLeft className="card__quote" />
+                  </div>
+                  <p className="card__txt">
+                     Guilherme has always been an excellent working partner, he
+                     has never spared efforts in project development. Incredible
+                     his learning capacity and also his tireless search for
+                     knowledge, he always cares to help the team and shows
+                     himself to be a good leader in the face of problems that
+                     arise. I'm sure he will always have a lot to contribute to
+                     whatever team he is on.
+                  </p>
+                  <img
+                     className="card__avatar"
+                     src={felipe}
+                     alt="felipe.jpeg"
+                  />
+                  <p className="card__name">Felipe Baraldi Deziderio</p>
+                  <p className="card__position">Backend Developer</p>
+                  <div className="card__linkedin">
+                     <a
+                        className="card__link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.linkedin.com/in/felipebaraldi/"
                      >
                         <FaLinkedinIn className="card__link-icon" />
                         <p className="card__link-p">LinkedIn Profile</p>

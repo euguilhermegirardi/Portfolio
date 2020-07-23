@@ -1,6 +1,11 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { FaMobileAlt, FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import {
+   FaMobileAlt,
+   FaLinkedin,
+   FaGithubSquare,
+   FaInstagramSquare,
+} from "react-icons/fa";
 
 import "../../../scss/pages/Resume/_info.scss";
 import profile from "../../../assets/Home/profile.jpeg";
@@ -42,6 +47,19 @@ export default function Info() {
                <FaGithubSquare className="info__icon" />
                <small className="info__small">
                   github.com/euguilhermegirardi
+               </small>
+            </a>
+         </div>
+         <div className="info__small-container">
+            <a
+               className="info__anchor"
+               href="https://www.instagram.com/euguilhermegirardi/"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+               <FaInstagramSquare className="info__icon" />
+               <small className="info__small">
+                  instagram.com/euguilhermegirardi/
                </small>
             </a>
          </div>

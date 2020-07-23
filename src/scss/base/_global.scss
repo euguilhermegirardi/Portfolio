@@ -20,3 +20,13 @@ a {
    text-decoration: none;
    color: inherit;
 }
+
+label {
+   display: none;
+}
+
+textarea {
+   margin: 0;
+   font-family: inherit;
+   resize: vertical;
+}

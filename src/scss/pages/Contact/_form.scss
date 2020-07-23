@@ -3,8 +3,6 @@
    flex-direction: column;
    justify-content: center;
 
-   padding: 1.5rem;
-
    .form__container {
       display: flex;
       align-items: center;
@@ -18,8 +16,10 @@
       color: #434e5e;
 
       .form__row {
-         margin-right: -5px;
-         margin-left: -5px;
+         display: flex;
+         flex-direction: column;
+
+         width: 100%;
       }
 
       .form__input-container {
@@ -42,14 +42,4 @@
          }
       }
    }
-}
-
-label {
-   display: none;
-}
-
-textarea {
-   margin: 0;
-   font-family: inherit;
-   resize: vertical;
 }

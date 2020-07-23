@@ -11,10 +11,6 @@ export default function Contact() {
    return (
       <>
          <Nav />
-         <header className="header">
-            <h2 className="h2">Contact</h2>
-         </header>
-
          <section className="profile">
             <img className="profile__img" src={profile} alt="profile.jpeg" />
             <div className="profile__description">
@@ -34,7 +30,12 @@ export default function Contact() {
             </div>
          </section>
 
-         <form className="form">
+         <form
+            className="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+         >
             <div className="form__container">
                <h2 className="h2">Get In Touch</h2>
                <div className="form__row">
@@ -74,7 +75,9 @@ export default function Contact() {
                   </div>
                </div>
 
-               <button className="btn">Send</button>
+               <button className="btn" type="submit">
+                  Send
+               </button>
             </div>
          </form>
          <Footer />

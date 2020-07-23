@@ -36,6 +36,7 @@ export default function Contact() {
             method="POST"
             data-netlify="true"
          >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form__container">
                <h2 className="h2">Get In Touch</h2>
                <div className="form__row">

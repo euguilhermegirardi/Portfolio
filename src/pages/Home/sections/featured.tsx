@@ -212,9 +212,9 @@ export default function Featured() {
             </div>
          </div>
 
-         <Link to="/projects" className="btn-container">
-            <button className="btn">View all projects</button>
-         </Link>
+         <button className="btn">
+            <Link to="/projects">View all projects</Link>
+         </button>
       </section>
    );
 }

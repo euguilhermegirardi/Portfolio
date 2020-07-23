@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
 import "../../scss/pages/Contact/_profile.scss";
@@ -35,7 +36,6 @@ export default function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
-            action="/pages/success"
          >
             <input type="hidden" name="form-name" value="contact" />
             <div className="form__container">
@@ -78,7 +78,7 @@ export default function Contact() {
                </div>
 
                <button className="btn" type="submit">
-                  Send
+                  <Link to="success">Send</Link>
                </button>
             </div>
          </form>

@@ -18,11 +18,10 @@ export default function Header() {
                CSS, and JavaScript but, currently, I am studying ReactJS,
                Node.js, and React Native.
             </p>
-            <Link className="btn-container" to="/contact">
-               <button className="btn" type="button">
-                  Hire Me
-               </button>
-            </Link>
+
+            <button className="btn" type="button">
+               <Link to="/contact">Hire Me</Link>
+            </button>
          </div>
       </header>
    );

@@ -27,9 +27,10 @@ export default function Info() {
                .
             </p>
          </div>
-         <Link className="btn-container" to="/contact">
-            <button className="btn">Let's Talk!</button>
-         </Link>
+
+         <button className="btn">
+            <Link to="/contact">Let's Talk!</Link>
+         </button>
       </section>
    );
 }

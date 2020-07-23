@@ -47,7 +47,7 @@ export default function Contact() {
                         type="text"
                         className="form__input"
                         name="name"
-                        placeholder="Name"
+                        placeholder="* Name"
                         minLength={2}
                         required
                      />
@@ -59,7 +59,7 @@ export default function Contact() {
                         type="email"
                         className="form__input"
                         name="email"
-                        placeholder="Email"
+                        placeholder="* Email"
                         required
                      />
                   </div>
@@ -69,12 +69,16 @@ export default function Contact() {
                      <textarea
                         className="form__input"
                         name="message"
-                        placeholder="Enter your message"
+                        placeholder="* Enter your message"
                         cols={30}
                         rows={10}
                         required
                      ></textarea>
                   </div>
+
+                  <small className="form__required">
+                     ( * ) Required fields
+                  </small>
                </div>
 
                <button className="btn" type="submit">

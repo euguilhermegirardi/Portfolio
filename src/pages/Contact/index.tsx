@@ -134,8 +134,6 @@ export default function Contact({ history }) {
                <button className="btn" type="submit">
                   Send
                </button>
-
-               <input className="btn" type="submit" />
             </div>
          </form>
 

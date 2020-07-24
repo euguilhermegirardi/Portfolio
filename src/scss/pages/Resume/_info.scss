@@ -1,16 +1,24 @@
 .info-resume {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-
-   background-color: #f7f7f7;
-   color: #434e5e;
-   margin: 1rem 0;
+   background-color: #2d4477;
+   color: #fff;
 
    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      margin: 0;
+      margin: 0 auto;
+      max-width: 720px;
+      margin-top: -4rem;
+   }
+
+   .info-resume__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (min-width: 768px) {
+         flex-direction: row;
+         margin: 0 auto;
+         max-width: 768px;
+      }
    }
 
    .info__img--resume {
@@ -19,8 +27,8 @@
       border-radius: 4px;
 
       @media screen and (min-width: 768px) {
-         width: 200px;
-         height: 220px;
+         width: 180px;
+         height: 200px;
          border-radius: 0px;
       }
    }
@@ -52,9 +60,11 @@
       justify-content: center;
 
       width: 370px;
+      margin-bottom: 1rem;
 
       @media screen and (min-width: 768px) {
          width: 100%;
+         margin-bottom: 0;
       }
    }
 

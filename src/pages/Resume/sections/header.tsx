@@ -8,7 +8,7 @@ export default function Header() {
    return (
       <header className="header">
          <div className="container">
-            <div className="header__container">
+            <div className="header__container header__container--resume">
                <h2 className="h2">Resume</h2>
                <button className="btn header__btn">
                   <FaFileDownload />

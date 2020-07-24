@@ -1,5 +1,12 @@
 .summary {
-   background-color: #0f2049;
+   background-color: #fff;
+   color: #2d4477;
+
+   @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      max-width: 720px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   }
 
    .summary__container {
       display: flex;

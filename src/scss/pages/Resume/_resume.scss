@@ -1,5 +1,13 @@
 .resume {
-   background-color: #0f2049;
+   background-color: #fff;
+   color: #2d4477;
+
+   @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      max-width: 720px;
+      box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white,
+         0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   }
 
    .resume__container {
       display: flex;
@@ -82,6 +90,10 @@
          .resume__p {
             text-align: initial;
             letter-spacing: 1px;
+
+            @media screen and (min-width: 768px) {
+               font-size: 1.3rem;
+            }
          }
       }
    }

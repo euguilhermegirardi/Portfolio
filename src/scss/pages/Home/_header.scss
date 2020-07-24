@@ -6,10 +6,19 @@
 
    padding: 3rem 1rem;
 
+   @media screen and (min-width: 768px) {
+      flex-direction: row;
+   }
+
    .header__img {
       width: 190px;
       height: 200px;
       border-radius: 2%;
+
+      @media screen and (min-width: 768px) {
+         max-width: 240px;
+         margin-right: 3rem;
+      }
    }
 
    .header__profile {
@@ -19,6 +28,10 @@
       justify-content: space-around;
       margin-top: 2rem;
       height: 20rem;
+
+      @media screen and (min-width: 768px) {
+         align-items: flex-start;
+      }
 
       .header__span {
          font-size: 1.2rem;
@@ -33,6 +46,10 @@
          text-align: center;
          line-height: 21px;
          margin-bottom: 1rem;
+
+         @media screen and (min-width: 768px) {
+            text-align: inherit;
+         }
       }
    }
 }

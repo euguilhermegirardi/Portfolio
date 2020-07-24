@@ -1,6 +1,7 @@
 .card-container {
    height: 38rem;
    padding: 3rem 1rem;
+   position: relative;
 }
 
 .card {
@@ -11,6 +12,11 @@
    border-radius: 2px;
    background-color: #f7f7f7;
    color: #434e5e;
+
+   @media screen and (min-width: 576px) {
+      max-width: 400px;
+      margin: 0 1rem;
+   }
 
    .card__quote-container {
       display: flex;
@@ -83,6 +89,13 @@
 }
 
 // TINY SLIDER CONFIG
+.tns-slider {
+   @media screen and (min-width: 576px) {
+      display: flex;
+      justify-content: space-around;
+   }
+}
+
 .tns-controls {
    height: 0;
 }
@@ -107,8 +120,15 @@
    }
 
    @media screen and (min-width: 414px) {
-      left: 3rem;
-      top: 18.5rem;
+      top: 21.6rem;
+      left: 22%;
+      position: absolute;
+   }
+
+   @media screen and (min-width: 576px) {
+      top: 21.6rem;
+      left: 28%;
+      position: absolute;
    }
 }
 
@@ -132,7 +152,14 @@
    }
 
    @media screen and (min-width: 414px) {
-      left: 14.6rem;
-      top: 18.4rem;
+      left: 66%;
+      top: 21.6rem;
+      position: absolute;
+   }
+
+   @media screen and (min-width: 576px) {
+      left: 63%;
+      top: 21.6rem;
+      position: absolute;
    }
 }

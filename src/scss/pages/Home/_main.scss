@@ -66,6 +66,10 @@
                height: 2rem;
                margin: 0 2rem;
 
+               @media screen and (min-width: 576px) {
+                  margin: 0 3.5rem;
+               }
+
                .main__svg {
                   height: 1.2rem;
                   width: 1.2rem;

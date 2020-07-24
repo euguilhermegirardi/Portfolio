@@ -131,6 +131,10 @@ export default function Contact({ history }) {
                   <small className="form__required">* Required fields</small>
                </div>
 
+               <button className="btn" type="submit">
+                  Send
+               </button>
+
                <input className="btn" type="submit" />
             </div>
          </form>

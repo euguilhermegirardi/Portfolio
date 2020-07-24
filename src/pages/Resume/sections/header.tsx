@@ -7,13 +7,17 @@ import "../../../scss/pages/Resume/_header.scss";
 export default function Header() {
    return (
       <header className="header">
-         <h2 className="h2">Resume</h2>
-         <button className="btn header__btn">
-            <FaFileDownload />
-            <Link to="/Resume/curriculum.pdf" target="_blank" download>
-               Download PDF Version
-            </Link>
-         </button>
+         <div className="container">
+            <div className="header__container">
+               <h2 className="h2">Resume</h2>
+               <button className="btn header__btn">
+                  <FaFileDownload />
+                  <Link to="/Resume/curriculum.pdf" target="_blank" download>
+                     Download PDF Version
+                  </Link>
+               </button>
+            </div>
+         </div>
       </header>
    );
 }

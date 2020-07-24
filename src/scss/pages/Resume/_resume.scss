@@ -1,7 +1,12 @@
 .resume {
-   display: flex;
-   flex-direction: column;
-   padding: 0 1rem 3rem 1rem;
+   background-color: #0f2049;
+
+   .resume__container {
+      display: flex;
+
+      flex-direction: column;
+      padding: 0 1rem 3rem 1rem;
+   }
 
    .resume__timeline {
       position: relative;

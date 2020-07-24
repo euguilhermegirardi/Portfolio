@@ -63,4 +63,8 @@
 .paragraph {
    text-align: center;
    line-height: 21px;
+
+   @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+   }
 }

@@ -22,6 +22,11 @@
          color: #34cb79;
          height: 1.8rem;
          width: 1.8rem;
+
+         @media screen and (min-width: 992px) {
+            height: 2.2rem;
+            width: 2.2rem;
+         }
       }
    }
 }

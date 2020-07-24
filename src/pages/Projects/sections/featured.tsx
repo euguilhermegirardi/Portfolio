@@ -357,9 +357,7 @@ export default function Featured() {
                               <span className="featured__techs">
                                  React Hooks
                               </span>
-                              <span className="featured__techs">
-                                 React Hook Form
-                              </span>
+                              <span className="featured__techs">Hook Form</span>
                            </div>
                         </div>
                      </div>

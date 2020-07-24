@@ -1,8 +1,12 @@
 .summary {
-   display: flex;
-   flex-direction: column;
+   background-color: #0f2049;
 
-   padding: 3rem 1rem;
+   .summary__container {
+      display: flex;
+      flex-direction: column;
+
+      padding: 3rem 1rem;
+   }
 
    .summary__p {
       font-size: 1rem;

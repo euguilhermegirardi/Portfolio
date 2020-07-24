@@ -25,7 +25,6 @@ export default function Featured() {
          <div className="container">
             <div className="featured__container">
                <h2 className="h2">Featured Projects</h2>
-
                <div className="featured__cards">
                   <div className="featured__card">
                      <div className="featured__card-container">
@@ -216,9 +215,7 @@ export default function Featured() {
                         <div className="featured__techs-container">
                            <span className="featured__techs">ReactJS</span>
                            <span className="featured__techs">React Hooks</span>
-                           <span className="featured__techs">
-                              React Hook Form
-                           </span>
+                           <span className="featured__techs">Hook Form</span>
                         </div>
                      </div>
                   </div>

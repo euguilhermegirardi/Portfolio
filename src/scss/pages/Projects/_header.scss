@@ -1,6 +1,9 @@
 .header {
-   display: flex;
-   flex-direction: column;
-
    background-color: #0f2049;
+
+   .header__container--projects {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem !important;
+   }
 }

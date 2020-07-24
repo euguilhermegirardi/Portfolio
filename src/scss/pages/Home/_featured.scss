@@ -16,6 +16,9 @@
       @media screen and (min-width: 992px) {
          display: flex;
          flex-direction: row;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
       }
 
       .featured__card {
@@ -36,29 +39,34 @@
             justify-content: initial;
 
             min-width: 290px;
-            min-height: 319px;
+            min-height: 0px;
+            max-height: 360px;
             margin: 0 0.8rem;
          }
 
-         .featured__img-container {
-            outline: none;
-            border: none;
-         }
+         .featured__card-container {
+            height: 193px;
 
-         .featured__img {
-            border-top-right-radius: 3px;
-            border-top-left-radius: 3px;
-            height: 200px;
-            width: 290px;
+            .featured__img-container {
+               outline: none;
+               border: none;
 
-            @media screen and (min-width: 576px) {
-               height: 440px;
-               width: 510px;
-            }
+               .featured__img {
+                  border-top-right-radius: 3px;
+                  border-top-left-radius: 3px;
+                  height: 200px;
+                  width: 290px;
 
-            @media screen and (min-width: 992px) {
-               height: 193px;
-               width: 290px;
+                  @media screen and (min-width: 576px) {
+                     height: 440px;
+                     width: 510px;
+                  }
+
+                  @media screen and (min-width: 992px) {
+                     height: 193px;
+                     width: 290px;
+                  }
+               }
             }
          }
 
@@ -87,6 +95,10 @@
                   max-width: 100%;
                }
 
+               @media screen and (min-width: 576px) {
+                  max-width: 290px;
+               }
+
                .featured__techs {
                   font-size: 0.9rem;
                   color: #34cb79;
@@ -101,10 +113,6 @@
 
       .featured__card:not(:last-child) {
          margin-bottom: 2.5rem;
-
-         @media screen and (min-width: 992px) {
-            margin-bottom: 0;
-         }
       }
    }
 }
@@ -132,6 +140,7 @@
 
    @media screen and (min-width: 992px) {
       min-width: 290px;
+      height: 0px;
       min-height: 193px;
       padding: 1rem;
    }

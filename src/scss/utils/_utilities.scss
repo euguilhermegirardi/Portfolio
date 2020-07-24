@@ -1,3 +1,28 @@
+// Container
+.container {
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+
+   @media screen and (min-width: 576px) {
+      max-width: 540px;
+   }
+
+   @media screen and (min-width: 768px) {
+      max-width: 720px;
+   }
+
+   @media screen and (min-width: 992px) {
+      max-width: 960px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      max-width: 1140px;
+   }
+}
+
 // Button
 .btn {
    width: 80%;
@@ -9,9 +34,19 @@
    letter-spacing: 1px;
    background-color: #152a61;
    color: #34cb79;
+   cursor: pointer;
+   transition: 0.3s ease;
+
+   &:hover {
+      background-color: #2549a1;
+   }
 
    @media screen and (min-width: 768px) {
       width: 55%;
+   }
+
+   @media screen and (min-width: 992px) {
+      width: 35%;
    }
 }
 

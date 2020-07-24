@@ -1,13 +1,14 @@
-.header {
+.header__container {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 
-   padding: 3rem 1rem;
+   padding: 2rem;
 
    @media screen and (min-width: 768px) {
       flex-direction: row;
+      padding: 0 2rem 2rem 2rem !important;
    }
 
    .header__img {

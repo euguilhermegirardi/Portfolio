@@ -2,6 +2,7 @@
    height: 38rem;
    padding: 3rem 1rem;
    position: relative;
+   background-color: #0f2049;
 }
 
 .card {
@@ -130,6 +131,10 @@
       left: 28%;
       position: absolute;
    }
+
+   @media screen and (min-width: 992px) {
+      left: 37%;
+   }
 }
 
 [data-controls="next"] {
@@ -161,5 +166,9 @@
       left: 63%;
       top: 21.6rem;
       position: absolute;
+   }
+
+   @media screen and (min-width: 992px) {
+      left: 58%;
    }
 }

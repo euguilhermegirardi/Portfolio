@@ -3,6 +3,10 @@
    padding: 3rem 1rem;
    position: relative;
    background-color: #0f2049;
+
+   @media screen and (min-width: 1200px) {
+      height: 100%;
+   }
 }
 
 .card {
@@ -10,13 +14,18 @@
    flex-direction: column;
    text-align: center;
    padding: 1rem;
-   border-radius: 2px;
+   border-radius: 4px;
    background-color: #f7f7f7;
    color: #434e5e;
 
    @media screen and (min-width: 576px) {
       max-width: 400px;
       margin: 0 1rem;
+   }
+
+   @media screen and (min-width: 1200px) {
+      max-width: 800px;
+      max-height: 350px;
    }
 
    .card__quote-container {
@@ -41,28 +50,53 @@
       @media screen and (min-width: 375px) {
          height: 13rem;
       }
+
+      @media screen and (min-width: 1200px) {
+         height: 5rem;
+      }
    }
 
-   .card__avatar {
-      margin: 1rem 0;
-      height: 5rem;
-      width: 5rem;
-      border-radius: 50%;
-   }
+   .card__profile-container {
+      display: flex;
+      margin: 0.4rem 3rem;
 
-   .card__name {
-      font-size: 1rem;
-      font-weight: 600;
-   }
+      .card__avatar {
+         margin: 1rem 0;
+         height: 5rem;
+         width: 5rem;
+         border-radius: 50%;
+      }
 
-   .card__position {
-      font-size: 0.87rem;
+      .card__profile-txt-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         margin-left: 1rem;
+
+         .card__name {
+            font-size: 1rem;
+            font-weight: 600;
+         }
+
+         .card__position {
+            font-size: 0.87rem;
+         }
+      }
    }
 
    .card__linkedin {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media screen and (min-width: 1200px) {
+         justify-content: flex-end;
+
+         margin-top: -4rem;
+         margin-right: 2rem;
+      }
 
       .card__link {
          display: flex;
@@ -137,7 +171,8 @@
    }
 
    @media screen and (min-width: 1200px) {
-      left: 43.1%;
+      top: 11rem;
+      left: 14%;
    }
 }
 
@@ -177,6 +212,7 @@
    }
 
    @media screen and (min-width: 1200px) {
-      left: 54%;
+      top: 11rem;
+      left: 82%;
    }
 }

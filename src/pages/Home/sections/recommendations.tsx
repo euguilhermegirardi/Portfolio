@@ -35,13 +35,17 @@ export default function Recommendations() {
                         with him very enjoyable, any team would be lucky to have
                         him!
                      </p>
-                     <img
-                        className="card__avatar"
-                        src={thiago}
-                        alt="thiago.jpeg"
-                     />
-                     <p className="card__name">Thiago Baptistella</p>
-                     <p className="card__position">Software Developer</p>
+                     <div className="card__profile-container">
+                        <img
+                           className="card__avatar"
+                           src={thiago}
+                           alt="thiago.jpeg"
+                        />
+                        <div className="card__profile-txt-container">
+                           <p className="card__name">Thiago Baptistella</p>
+                           <p className="card__position">Software Developer</p>
+                        </div>
+                     </div>
                      <div className="card__linkedin">
                         <a
                            className="card__link"
@@ -69,13 +73,19 @@ export default function Recommendations() {
                         precisely. The only thing he has to learn a bit more is
                         to be more confident.
                      </p>
-                     <img
-                        className="card__avatar"
-                        src={daniel}
-                        alt="daniel.jpeg"
-                     />
-                     <p className="card__name">Daniel Murth</p>
-                     <p className="card__position">Full Stack Web Developer</p>
+                     <div className="card__profile-container">
+                        <img
+                           className="card__avatar"
+                           src={daniel}
+                           alt="daniel.jpeg"
+                        />
+                        <div className="card__profile-txt-container">
+                           <p className="card__name">Daniel Murth</p>
+                           <p className="card__position">
+                              Full Stack Web Developer
+                           </p>
+                        </div>
+                     </div>
                      <div className="card__linkedin">
                         <a
                            className="card__link"
@@ -102,13 +112,17 @@ export default function Recommendations() {
                         elegant architecture. Any team he may join, will
                         instantly benefit from his excellent talent.
                      </p>
-                     <img
-                        className="card__avatar"
-                        src={bruno}
-                        alt="bruno.jpeg"
-                     />
-                     <p className="card__name">Bruno Miguel</p>
-                     <p className="card__position">Software Engineer</p>
+                     <div className="card__profile-container">
+                        <img
+                           className="card__avatar"
+                           src={bruno}
+                           alt="bruno.jpeg"
+                        />
+                        <div className="card__profile-txt-container">
+                           <p className="card__name">Bruno Miguel</p>
+                           <p className="card__position">Software Engineer</p>
+                        </div>
+                     </div>
                      <div className="card__linkedin">
                         <a
                            className="card__link"
@@ -135,13 +149,19 @@ export default function Recommendations() {
                         problems that arise. I'm sure he will always have a lot
                         to contribute to whatever team he is on.
                      </p>
-                     <img
-                        className="card__avatar"
-                        src={felipe}
-                        alt="felipe.jpeg"
-                     />
-                     <p className="card__name">Felipe Baraldi Deziderio</p>
-                     <p className="card__position">Backend Developer</p>
+                     <div className="card__profile-container">
+                        <img
+                           className="card__avatar"
+                           src={felipe}
+                           alt="felipe.jpeg"
+                        />
+                        <div className="card__profile-txt-container">
+                           <p className="card__name">
+                              Felipe Baraldi Deziderio
+                           </p>
+                           <p className="card__position">Backend Developer</p>
+                        </div>
+                     </div>
                      <div className="card__linkedin">
                         <a
                            className="card__link"

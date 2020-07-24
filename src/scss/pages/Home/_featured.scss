@@ -83,6 +83,10 @@
                flex-wrap: wrap;
                max-width: 290px;
 
+               @media screen and (min-width: 576px) {
+                  max-width: 100%;
+               }
+
                .featured__techs {
                   font-size: 0.9rem;
                   color: #34cb79;

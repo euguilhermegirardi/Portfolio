@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers";
+import * as yup from "yup";
 
 import "../../scss/pages/Contact/_profile.scss";
 import "../../scss/pages/Contact/_form.scss";
@@ -8,7 +10,27 @@ import Nav from "../../components/Nav";
 import profile from "../../assets/Home/profile.jpeg";
 import Footer from "../../components/Footer";
 
-export default function Contact() {
+interface IFormInputs {
+   name: string;
+   email: string;
+   message: string;
+}
+
+const SignupSchema = yup.object().shape({
+   name: yup.string().required(),
+   email: yup.string().required(),
+   message: yup.string().required(),
+});
+
+export default function Contact({ history }) {
+   const { register, handleSubmit, errors } = useForm<IFormInputs>({
+      resolver: yupResolver(SignupSchema),
+   });
+
+   const onSubmit = (data: IFormInputs) => {
+      history.push("/success");
+   };
+
    return (
       <>
          <Nav />
@@ -24,20 +46,40 @@ export default function Contact() {
                   You can also find me on the following channels
                </small>
                <div className="profile__icons">
-                  <FaLinkedinIn className="profile__icon" />
-                  <FaGithub className="profile__icon" />
-                  <FaInstagram className="profile__icon" />
+                  <a
+                     href="https://www.linkedin.com/in/guilherme-girardi-1aa6a1185/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <FaLinkedinIn className="profile__icon" />
+                  </a>
+                  <a
+                     href="https://github.com/euguilhermegirardi"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <FaGithub className="profile__icon" />
+                  </a>
+                  <a
+                     href="https://www.instagram.com/euguilhermegirardi/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <FaInstagram className="profile__icon" />
+                  </a>
                </div>
             </div>
          </section>
 
          <form
+            onSubmit={handleSubmit(onSubmit)}
             className="form"
             name="contact"
             method="POST"
             data-netlify="true"
          >
             <input type="hidden" name="form-name" value="contact" />
+
             <div className="form__container">
                <h2 className="h2">Get In Touch</h2>
                <div className="form__row">
@@ -46,11 +88,14 @@ export default function Contact() {
                      <input
                         type="text"
                         className="form__input"
-                        name="name"
                         placeholder="* Name"
                         minLength={2}
-                        required
+                        name="name"
+                        ref={register}
                      />
+                     {errors.name && (
+                        <p className="form__error">{errors.name.message}</p>
+                     )}
                   </div>
 
                   <div className="form__input-container">
@@ -58,34 +103,38 @@ export default function Contact() {
                      <input
                         type="email"
                         className="form__input"
-                        name="email"
                         placeholder="* Email"
-                        required
+                        name="email"
+                        ref={register}
                      />
+                     {errors.email && (
+                        <p className="form__error">{errors.email.message}</p>
+                     )}
                   </div>
 
                   <div className="form__input-container">
                      <label htmlFor="#">Your Message</label>
                      <textarea
                         className="form__input"
-                        name="message"
                         placeholder="* Enter your message"
                         cols={30}
                         rows={10}
-                        required
-                     ></textarea>
+                        minLength={5}
+                        name="message"
+                        ref={register}
+                     />
+                     {errors.message && (
+                        <p className="form__error">{errors.message.message}</p>
+                     )}
                   </div>
 
-                  <small className="form__required">
-                     ( * ) Required fields
-                  </small>
+                  <small className="form__required">* Required fields</small>
                </div>
 
-               <button className="btn" type="submit">
-                  <Link to="success">Send</Link>
-               </button>
+               <input className="btn" type="submit" />
             </div>
          </form>
+
          <Footer />
       </>
    );

@@ -41,6 +41,15 @@
          border-radius: 0.25rem;
          height: auto;
       }
+
+      .form__error {
+         color: red;
+      }
+
+      .form__error::before {
+         display: inline;
+         content: "⚠ ";
+      }
    }
 
    .form__required {

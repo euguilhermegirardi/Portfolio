@@ -30,3 +30,12 @@ textarea {
    font-family: inherit;
    resize: vertical;
 }
+
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+   transition: 0.3s all;
+   transform: translateY(3px);
+   border: 1px solid transparent;
+   opacity: 0.8;
+}

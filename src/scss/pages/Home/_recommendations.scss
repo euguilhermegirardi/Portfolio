@@ -135,6 +135,10 @@
    @media screen and (min-width: 992px) {
       left: 37%;
    }
+
+   @media screen and (min-width: 1200px) {
+      left: 43.1%;
+   }
 }
 
 [data-controls="next"] {
@@ -170,5 +174,9 @@
 
    @media screen and (min-width: 992px) {
       left: 58%;
+   }
+
+   @media screen and (min-width: 1200px) {
+      left: 54%;
    }
 }

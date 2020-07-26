@@ -1,6 +1,7 @@
 .info-resume {
    background-color: #2d4477;
    color: #fff;
+   padding: 1.5rem;
 
    @media screen and (min-width: 768px) {
       margin: 0 auto;
@@ -46,7 +47,7 @@
       align-items: center;
       justify-content: center;
 
-      width: 370px;
+      // width: 370px;
 
       @media screen and (min-width: 768px) {
          width: 100%;
@@ -59,8 +60,8 @@
       align-items: center;
       justify-content: center;
 
-      width: 370px;
-      margin-bottom: 1rem;
+      // width: 370px;
+      // margin-bottom: 1rem;
 
       @media screen and (min-width: 768px) {
          width: 100%;
@@ -87,8 +88,8 @@
       align-items: center;
       justify-content: flex-start;
 
-      width: 100%;
-      margin: 1rem 0 0 2rem;
+      width: 270px;
+      margin: 2.1px 0;
 
       .info__anchor {
          display: flex;

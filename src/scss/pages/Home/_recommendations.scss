@@ -1,5 +1,5 @@
 .card-container {
-   height: 38rem;
+   height: 40rem;
    padding: 3rem 1rem;
    position: relative;
    background-color: #0f2049;
@@ -58,6 +58,9 @@
 
    .card__profile-container {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+
       margin: 0.4rem 3rem;
 
       .card__avatar {

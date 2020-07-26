@@ -6,6 +6,10 @@
 
    padding: 2rem;
 
+   @media screen and (min-width: 768px) {
+      flex-direction: row;
+   }
+
    .header__img {
       width: 190px;
       height: 200px;

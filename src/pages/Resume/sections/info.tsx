@@ -24,13 +24,17 @@ export default function Info() {
                   <h2 className="h2 info__h2">Guilherme Girardi</h2>
                   <h3 className="info__h3">Frontend Developer</h3>
                   <div className="info__small-container">
-                     <AiOutlineMail className="info__icon" />
+                     <div className="info__icon-container">
+                        <AiOutlineMail className="info__icon" />
+                     </div>
                      <small className="info__small">
                         girardi.gui@icloud.com
                      </small>
                   </div>
                   <div className="info__small-container">
-                     <FaMobileAlt className="info__icon" />
+                     <div className="info__icon-container">
+                        <FaMobileAlt className="info__icon" />
+                     </div>
                      <small className="info__small">+353 083 380 0087</small>
                   </div>
                </div>
@@ -42,7 +46,9 @@ export default function Info() {
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        <FaLinkedin className="info__icon" />
+                        <div className="info__icon-container">
+                           <FaLinkedin className="info__icon" />
+                        </div>
                         <small className="info__small">
                            linkedin.com/in/guilherme-girardi-1aa6a1185/
                         </small>
@@ -55,7 +61,9 @@ export default function Info() {
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        <FaGithubSquare className="info__icon" />
+                        <div className="info__icon-container">
+                           <FaGithubSquare className="info__icon" />
+                        </div>
                         <small className="info__small">
                            github.com/euguilhermegirardi
                         </small>
@@ -68,7 +76,9 @@ export default function Info() {
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        <FaInstagramSquare className="info__icon" />
+                        <div className="info__icon-container">
+                           <FaInstagramSquare className="info__icon" />
+                        </div>
                         <small className="info__small">
                            instagram.com/euguilhermegirardi/
                         </small>

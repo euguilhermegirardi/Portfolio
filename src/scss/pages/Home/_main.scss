@@ -28,6 +28,10 @@
    align-items: center;
    justify-content: center;
 
+   @media screen and (min-width: 576px) {
+      padding: 0 2.2rem;
+   }
+
    @media screen and (min-width: 992px) {
       flex-direction: row;
    }

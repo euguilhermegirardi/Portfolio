@@ -39,6 +39,10 @@
       background-color: #2549a1;
    }
 
+   @media screen and (min-width: 576px) {
+      width: 80%;
+   }
+
    @media screen and (min-width: 768px) {
       width: 55%;
    }

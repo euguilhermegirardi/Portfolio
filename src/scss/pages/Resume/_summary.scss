@@ -13,6 +13,10 @@
       flex-direction: column;
 
       padding: 3rem 1rem;
+
+      @media screen and (min-width: 576px) {
+         padding: 3rem;
+      }
    }
 
    .summary__p {

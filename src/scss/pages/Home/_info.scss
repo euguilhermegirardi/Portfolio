@@ -9,6 +9,10 @@
    align-items: center;
    justify-content: center;
 
+   @media screen and (min-width: 576px) {
+      padding: 0 2rem;
+   }
+
    .info__img {
       width: 5rem;
       height: 5rem;

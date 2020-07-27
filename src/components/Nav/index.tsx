@@ -49,6 +49,7 @@ export default function Nav() {
                      <FaGithub className="nav__icon" />
                   </a>
                </div>
+
                <div className="nav__menu">
                   <CheeseburgerMenu
                      isOpen={menu.menuOpen}
@@ -81,6 +82,23 @@ export default function Nav() {
                      borderRadius={0}
                      animationDuration={0.5}
                   />
+               </div>
+
+               <div className="nav__menu-desktop">
+                  <ul className="nav__menu-ul">
+                     <li className="nav__menu-li">
+                        <Link to="/">Home</Link>
+                     </li>
+                     <li className="nav__menu-li">
+                        <Link to="/projects">Projects</Link>
+                     </li>
+                     <li className="nav__menu-li">
+                        <Link to="/resume">Resume</Link>
+                     </li>
+                     <li className="nav__menu-li">
+                        <Link to="/contact">Contact</Link>
+                     </li>
+                  </ul>
                </div>
             </div>
          </div>

@@ -8,55 +8,83 @@
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
+}
 
-   .nav__icons {
-      display: flex;
-      justify-content: space-between;
-      min-width: 10rem;
+.nav__icons {
+   display: flex;
+   justify-content: space-between;
+   min-width: 10rem;
 
-      .nav__anchor {
-         color: #34cb79;
+   .nav__anchor {
+      color: #34cb79;
 
-         .nav__icon {
-            height: 1.8rem;
-            width: 1.8rem;
-
-            @media screen and (min-width: 992px) {
-               height: 2.2rem;
-               width: 2.2rem;
-            }
-         }
-      }
-   }
-
-   .nav__menu {
-      display: flex;
-
-      .nav__dropdown {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-
-         background-color: #081229;
-         height: 100%;
-
-         .nav__dropdown-item {
-            list-style: none;
-            margin: 0.7rem 0;
-            font-size: 1.5rem;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-         }
-      }
-
-      .nav__icon--menu {
-         height: 1.5rem;
-         width: 1.5rem;
+      .nav__icon {
+         height: 1.8rem;
+         width: 1.8rem;
 
          @media screen and (min-width: 992px) {
             height: 2.2rem;
             width: 2.2rem;
+         }
+      }
+   }
+}
+
+.nav__menu {
+   display: flex;
+
+   @media screen and (min-width: 768px) {
+      display: none;
+   }
+
+   .nav__dropdown {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #081229;
+      height: 100%;
+
+      .nav__dropdown-item {
+         list-style: none;
+         margin: 0.7rem 0;
+         font-size: 1.5rem;
+         font-weight: 400;
+         letter-spacing: 1.5px;
+      }
+   }
+
+   .nav__icon--menu {
+      height: 1.5rem;
+      width: 1.5rem;
+
+      @media screen and (min-width: 992px) {
+         height: 2.2rem;
+         width: 2.2rem;
+      }
+   }
+}
+
+// Desktop
+.nav__menu-desktop {
+   display: none;
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+
+   .nav__menu-ul {
+      display: flex;
+
+      .nav__menu-li {
+         font-size: 1.2rem;
+         margin: 0 1.2rem;
+         cursor: pointer;
+         transition: 0.2s ease-in-out;
+
+         &:hover {
+            color: #18492e;
          }
       }
    }

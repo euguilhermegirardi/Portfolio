@@ -25,9 +25,9 @@ export default function Header() {
                      studying ReactJS, Node.js, and React Native.
                   </p>
 
-                  <button className="btn" type="button">
-                     <Link to="/contact">Hire Me</Link>
-                  </button>
+                  <Link className="btn" to="/contact">
+                     Hire Me
+                  </Link>
                </div>
             </div>
          </div>

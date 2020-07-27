@@ -19,20 +19,18 @@ export default function Info() {
                      Looking for an experienced frontend developer to build your
                      web app or ship your software product? To start an initial
                      chat, just drop me an email at{" "}
-                     <a className="info__link" href="/">
-                        girardi.gui@icloud.com
-                     </a>{" "}
+                     <span className="info__link">girardi.gui@icloud.com</span>{" "}
                      or use the{" "}
-                     <a className="info__link" href="/">
+                     <Link className="info__link" to="/contact">
                         form on the contact page
-                     </a>
+                     </Link>
                      .
                   </p>
                </div>
 
-               <button className="btn">
-                  <Link to="/contact">Let's Talk!</Link>
-               </button>
+               <Link to="/contact" className="btn">
+                  Let's Talk!
+               </Link>
             </div>
          </div>
       </section>

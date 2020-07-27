@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaDesktop, FaDatabase, FaSteamSquare, FaCheck } from "react-icons/fa";
 
 import "../../../scss/pages/Home/_main.scss";
@@ -14,9 +15,9 @@ export default function Main() {
                   applications. Bellow is a quick overview of my main technical
                   skill sets and tools I use. Want to find out more about my
                   experience?{" "}
-                  <a className="main__anchor" href="/">
+                  <Link className="main__anchor" to="/resume">
                      Check out my online resume.
-                  </a>
+                  </Link>
                </p>
             </div>
 

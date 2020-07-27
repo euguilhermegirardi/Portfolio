@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 
 import "../../../scss/pages/Home/_featured.scss";
+import "../../../scss/pages/Projects/_featured.scss";
 import theSunImg from "../../../assets/Features/the-irish-sun.png";
 import theIrishImg from "../../../assets/Features/the-irish-times.png";
 import globoImg from "../../../assets/Features/globo.png";
@@ -32,7 +33,7 @@ export default function Featured() {
             <div className="container">
                <div className="featured__container">
                   <div className="featured__cards">
-                     <div className="featured__card">
+                     <div className="featured__card featured__card--projects">
                         <div className="featured__card-container">
                            {theSun ? (
                               <div ref={ref} className="featured__proj-info">
@@ -98,7 +99,7 @@ export default function Featured() {
                         </div>
                      </div>
 
-                     <div className="featured__card">
+                     <div className="featured__card featured__card--projects">
                         <div className="featured__card-container">
                            {theIrish ? (
                               <div ref={ref} className="featured__proj-info">
@@ -163,7 +164,7 @@ export default function Featured() {
                         </div>
                      </div>
 
-                     <div className="featured__card">
+                     <div className="featured__card featured__card--projects">
                         <div className="featured__card-container">
                            {globo ? (
                               <div ref={ref} className="featured__proj-info">
@@ -226,7 +227,7 @@ export default function Featured() {
                         </div>
                      </div>
 
-                     <div className="featured__card">
+                     <div className="featured__card featured__card--projects">
                         <div className="featured__card-container">
                            {knots ? (
                               <div ref={ref} className="featured__proj-info">
@@ -294,7 +295,7 @@ export default function Featured() {
                         </div>
                      </div>
 
-                     <div className="featured__card">
+                     <div className="featured__card featured__card--projects">
                         <div className="featured__card-container">
                            {catalog ? (
                               <div ref={ref} className="featured__proj-info">
@@ -362,7 +363,7 @@ export default function Featured() {
                         </div>
                      </div>
 
-                     <div className="featured__card">
+                     <div className="featured__card featured__card--projects">
                         <div className="featured__card-container">
                            {ecommerce ? (
                               <div ref={ref} className="featured__proj-info">

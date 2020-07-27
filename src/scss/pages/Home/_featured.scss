@@ -113,6 +113,10 @@
 
       .featured__card:not(:last-child) {
          margin-bottom: 2.5rem;
+
+         @media screen and (min-width: 992px) {
+            margin-bottom: 0;
+         }
       }
    }
 }
@@ -171,6 +175,7 @@
 
       @media screen and (min-width: 992px) {
          font-size: 1rem;
+         margin: 0.5rem 0;
       }
    }
 
@@ -180,6 +185,10 @@
       justify-content: space-around;
 
       width: 100%;
+
+      @media screen and (min-width: 992px) {
+         align-items: normal;
+      }
 
       .featured__btn {
          font-size: 1rem;
@@ -192,14 +201,11 @@
 
          @media screen and (min-width: 576px) {
             font-size: 1.3rem;
-            // height: 4.2rem;
-            // width: 10rem;
          }
 
          @media screen and (min-width: 992px) {
             font-size: 1rem;
-            // height: 2.2rem;
-            // width: 7rem;
+            width: 7rem;
          }
       }
    }

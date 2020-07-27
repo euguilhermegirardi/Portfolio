@@ -37,6 +37,10 @@
          align-items: flex-start;
       }
 
+      @media screen and (min-width: 992px) {
+         height: 17rem;
+      }
+
       .header__span {
          font-size: 1.2rem;
       }

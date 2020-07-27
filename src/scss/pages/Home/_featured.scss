@@ -179,14 +179,16 @@
       align-items: center;
       justify-content: space-around;
 
-      width: 90%;
+      width: 100%;
 
       .featured__btn {
          font-size: 1rem;
          font-weight: 400;
-         // height: 2.4rem;
-         // width: 7.5rem;
-         margin: 1rem;
+         padding: 0.8rem 0px;
+
+         &:first-child {
+            margin-right: 5px;
+         }
 
          @media screen and (min-width: 576px) {
             font-size: 1.3rem;

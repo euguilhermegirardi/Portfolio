@@ -10,12 +10,15 @@ export default function Header() {
          <div className="container">
             <div className="header__container header__container--resume">
                <h2 className="h2">Resume</h2>
-               <button className="btn header__btn">
+               <Link
+                  to="/Resume/curriculum.pdf"
+                  className="btn header__btn"
+                  target="_blank"
+                  download
+               >
                   <FaFileDownload />
-                  <Link to="/Resume/curriculum.pdf" target="_blank" download>
-                     Download PDF Version
-                  </Link>
-               </button>
+                  Download PDF Version
+               </Link>
             </div>
          </div>
       </header>

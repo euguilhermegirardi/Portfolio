@@ -4,9 +4,8 @@
    padding: 1.5rem;
 
    @media screen and (min-width: 768px) {
-      margin: 0 auto;
-      max-width: 720px;
       margin-top: -4rem;
+      padding: 0 1rem;
    }
 
    .info-resume__container {
@@ -17,8 +16,10 @@
 
       @media screen and (min-width: 768px) {
          flex-direction: row;
+         justify-content: space-around;
+
+         max-width: 720px;
          margin: 0 auto;
-         max-width: 768px;
       }
    }
 
@@ -38,7 +39,7 @@
 .info__container--resume {
    @media screen and (min-width: 768px) {
       flex-direction: row;
-      margin-left: 1rem;
+      padding: 0;
    }
 
    .info__profile-container {
@@ -46,8 +47,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-      // width: 370px;
 
       @media screen and (min-width: 768px) {
          width: 100%;

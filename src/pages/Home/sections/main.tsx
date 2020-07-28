@@ -58,6 +58,7 @@ export default function Main() {
                      <FaDatabase className="main__icon-main" />
                   </div>
                   <h3 className="main__skill-title">Backend</h3>
+                  <small className="main__skill-small">(basic)</small>
                   <ul className="main__ul">
                      <li className="main__li">
                         <div className="main__item">
@@ -89,8 +90,13 @@ export default function Main() {
                      <FaSteamSquare className="main__icon-main" />
                   </div>
                   <h3 className="main__skill-title">Others</h3>
+                  <small className="main__skill-small">(basic)</small>
                   <ul className="main__ul">
                      <li className="main__li">
+                        <div className="main__item">
+                           <FaCheck className="main__svg" />
+                           <p className="main__p">React Native</p>
+                        </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />
                            <p className="main__p">TypeScript</p>

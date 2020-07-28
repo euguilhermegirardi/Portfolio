@@ -49,7 +49,7 @@
    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
    @media screen and (min-width: 992px) {
-      min-height: 21rem;
+      min-height: 22rem;
       margin: 0 0.8rem;
    }
 
@@ -73,12 +73,18 @@
    }
 
    .main__skill-title {
-      margin: 1.4rem 0;
+      margin-top: 1.4rem;
       font-size: 1.6rem;
+   }
+
+   .main__skill-small {
+      margin-top: 7px;
+      font-size: 1.1rem;
    }
 
    .main__ul {
       width: 100%;
+      margin-top: 1.5rem;
 
       .main__li {
          list-style: none;

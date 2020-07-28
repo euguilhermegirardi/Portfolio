@@ -56,6 +56,12 @@
                   border-top-left-radius: 3px;
                   height: 200px;
                   width: 290px;
+                  cursor: pointer;
+                  transition: 0.2s ease-out;
+
+                  &:hover {
+                     opacity: 0.6;
+                  }
 
                   @media screen and (min-width: 576px) {
                      height: 335px;

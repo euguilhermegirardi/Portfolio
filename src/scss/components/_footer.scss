@@ -4,29 +4,29 @@
 
    background-color: #081229;
    padding: 1rem;
+}
 
-   .footer__icons {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
+.footer__icons {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
 
-      @media screen and (min-width: 1200px) {
-         padding: 0 15rem;
-      }
+   @media screen and (min-width: 1200px) {
+      padding: 0 15rem;
+   }
 
-      .footer__anchor {
-         text-decoration: none;
-      }
+   .footer__anchor {
+      text-decoration: none;
+   }
 
-      .footer__icon {
-         color: #34cb79;
-         height: 1.8rem;
-         width: 1.8rem;
+   .footer__icon {
+      color: #34cb79;
+      height: 1.8rem;
+      width: 1.8rem;
 
-         @media screen and (min-width: 992px) {
-            height: 2.2rem;
-            width: 2.2rem;
-         }
+      @media screen and (min-width: 992px) {
+         height: 2.2rem;
+         width: 2.2rem;
       }
    }
 }

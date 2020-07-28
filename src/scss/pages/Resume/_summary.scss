@@ -5,25 +5,25 @@
    @media screen and (min-width: 768px) {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
    }
+}
 
-   .summary__container {
-      display: flex;
-      flex-direction: column;
+.summary__container {
+   display: flex;
+   flex-direction: column;
 
-      padding: 3rem 1.5rem;
+   padding: 3rem 1.5rem;
 
-      @media screen and (min-width: 576px) {
-         padding: 3rem;
-      }
+   @media screen and (min-width: 576px) {
+      padding: 3rem;
    }
+}
 
-   .summary__p {
-      font-size: 1rem;
-      text-align: initial;
-      line-height: 1.6rem;
-      letter-spacing: 0.5px;
-      margin-top: 1rem;
-   }
+.summary__p {
+   font-size: 1rem;
+   text-align: initial;
+   line-height: 1.6rem;
+   letter-spacing: 0.5px;
+   margin-top: 1rem;
 }
 
 .summary__h3 {

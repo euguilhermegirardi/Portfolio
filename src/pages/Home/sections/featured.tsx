@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../../../scss/pages/Home/_featured.scss";
 import theSunImg from "../../../assets/Features/the-irish-sun.png";
-import catalogImg from "../../../assets/Features/catalog-of-books.png";
+import spotifyImg from "../../../assets/Features/spotify.png";
 import knotsImg from "../../../assets/Features/knots-4-you.png";
 import ClickOutside from "../../../components/ClickOutside";
 
@@ -13,11 +13,11 @@ export default function Featured() {
    const ref = useRef<HTMLDivElement>(null);
    // State for our modal
    const [theSun, setTheSun] = useState(false);
-   const [catalog, setCatalog] = useState(false);
+   const [spotify, setSpotify] = useState(false);
    const [knots, setKnots] = useState(false);
    // Call hook passing in the ref and a function to call on outside click
    ClickOutside(ref, () => setTheSun(false));
-   ClickOutside(ref, () => setCatalog(false));
+   ClickOutside(ref, () => setSpotify(false));
    ClickOutside(ref, () => setKnots(false));
 
    return (
@@ -156,21 +156,21 @@ export default function Featured() {
 
                   <div className="featured__card">
                      <div className="featured__card-container">
-                        {catalog ? (
+                        {spotify ? (
                            <div ref={ref} className="featured__proj-info">
                               <h4 className="featured__proj-info-title">
-                                 Project: Catalog of Books
+                                 Project: Spotify - Class Component
                               </h4>
                               <p className="featured__proj-info-p">
-                                 An application where the user can search for
-                                 books and leave a review about the website.
+                                 An application where I could learn about
+                                 Redux-Saga in a professional way.
                               </p>
                               <div className="featured__proj-info-btn">
                                  <button
                                     className="btn featured__btn"
                                     onClick={() => {
                                        window.open(
-                                          "https://catalog-of-books.netlify.app/"
+                                          "https://spotify-class-component.netlify.app/"
                                        );
                                     }}
                                  >
@@ -180,7 +180,7 @@ export default function Featured() {
                                     className="btn featured__btn"
                                     onClick={() => {
                                        window.open(
-                                          "https://github.com/euguilhermegirardi/Catalog-of-Books"
+                                          "https://github.com/euguilhermegirardi/Spotify-Class-Component"
                                        );
                                     }}
                                  >
@@ -191,12 +191,12 @@ export default function Featured() {
                         ) : (
                            <button
                               className="featured__img-container"
-                              onClick={() => setCatalog(true)}
+                              onClick={() => setSpotify(true)}
                            >
                               <img
                                  className="featured__img"
-                                 src={catalogImg}
-                                 alt="catalog-of-books.png"
+                                 src={spotifyImg}
+                                 alt="spotify.png"
                               />
                            </button>
                         )}
@@ -209,13 +209,15 @@ export default function Featured() {
                            rel="noopener noreferrer"
                         >
                            <h3 className="featured__project">
-                              Catalog of Books
+                              Spotify - Class Component
                            </h3>
                         </a>
                         <div className="featured__techs-container">
                            <span className="featured__techs">ReactJS</span>
-                           <span className="featured__techs">React Hooks</span>
-                           <span className="featured__techs">Hook Form</span>
+                           <span className="featured__techs">
+                              Class Component
+                           </span>
+                           <span className="featured__techs">Redux-Saga</span>
                         </div>
                      </div>
                   </div>

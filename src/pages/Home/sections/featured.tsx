@@ -214,10 +214,8 @@ export default function Featured() {
                         </a>
                         <div className="featured__techs-container">
                            <span className="featured__techs">ReactJS</span>
-                           <span className="featured__techs">
-                              Class Component
-                           </span>
                            <span className="featured__techs">Redux-Saga</span>
+                           <span className="featured__techs">Duck Pattern</span>
                         </div>
                      </div>
                   </div>

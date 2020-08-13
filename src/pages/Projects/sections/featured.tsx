@@ -562,7 +562,7 @@ export default function Featured() {
                               <span className="featured__techs">
                                  TypeScript
                               </span>
-                              <span className="featured__techs">ReactJS</span>
+                              <span className="featured__techs">React</span>
                               <span className="featured__techs">
                                  Redux-Saga
                               </span>

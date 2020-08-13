@@ -9,6 +9,7 @@ import knotsImg from "../../../assets/Features/knots-4-you.png";
 import catalogImg from "../../../assets/Features/catalog-of-books.png";
 import ecommerceImg from "../../../assets/Features/ecommerce.png";
 import spotifyImg from "../../../assets/Features/spotify.png";
+import pokedexImg from "../../../assets/Features/pokedex.png";
 import ClickOutside from "../../../components/ClickOutside";
 
 export default function Featured() {
@@ -21,6 +22,7 @@ export default function Featured() {
    const [catalog, setCatalog] = useState(false);
    const [ecommerce, setEcommerce] = useState(false);
    const [spotify, setSpotify] = useState(false);
+   const [pokedex, setPokedex] = useState(false);
 
    ClickOutside(ref, () => setTheSun(false));
    ClickOutside(ref, () => setTheIrish(false));
@@ -29,6 +31,7 @@ export default function Featured() {
    ClickOutside(ref, () => setCatalog(false));
    ClickOutside(ref, () => setEcommerce(false));
    ClickOutside(ref, () => setSpotify(false));
+   ClickOutside(ref, () => setPokedex(false));
 
    return (
       <>
@@ -495,6 +498,74 @@ export default function Featured() {
                               <span className="featured__techs">
                                  Class Component
                               </span>
+                              <span className="featured__techs">
+                                 Redux-Saga
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div className="featured__card featured__card--projects">
+                        <div className="featured__card-container">
+                           {pokedex ? (
+                              <div ref={ref} className="featured__proj-info">
+                                 <h4 className="featured__proj-info-title">
+                                    Project: Pokedex
+                                 </h4>
+                                 <p className="featured__proj-info-p">
+                                    An application where I could learn about
+                                    TypeScript in a professional way.
+                                 </p>
+                                 <div className="featured__proj-info-btn">
+                                    <button
+                                       className="btn featured__btn"
+                                       onClick={() => {
+                                          window.open(
+                                             "https://pokedex-typescript.netlify.app/"
+                                          );
+                                       }}
+                                    >
+                                       View Project
+                                    </button>
+                                    <button
+                                       className="btn featured__btn"
+                                       onClick={() => {
+                                          window.open(
+                                             "https://github.com/euguilhermegirardi/Pokedex"
+                                          );
+                                       }}
+                                    >
+                                       GitHub
+                                    </button>
+                                 </div>
+                              </div>
+                           ) : (
+                              <button
+                                 className="featured__img-container"
+                                 onClick={() => setPokedex(true)}
+                              >
+                                 <img
+                                    className="featured__img"
+                                    src={spotifyImg}
+                                    alt="pokedexImg.png"
+                                 />
+                              </button>
+                           )}
+                        </div>
+
+                        <div className="featured__txt-container">
+                           <a
+                              href="https://pokedex-typescript.netlify.app/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <h3 className="featured__project">Pokedex</h3>
+                           </a>
+                           <div className="featured__techs-container">
+                              <span className="featured__techs">
+                                 TypeScript
+                              </span>
+                              <span className="featured__techs">ReactJS</span>
                               <span className="featured__techs">
                                  Redux-Saga
                               </span>

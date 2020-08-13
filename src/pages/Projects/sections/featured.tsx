@@ -546,7 +546,7 @@ export default function Featured() {
                               >
                                  <img
                                     className="featured__img"
-                                    src={spotifyImg}
+                                    src={pokedexImg}
                                     alt="pokedexImg.png"
                                  />
                               </button>

@@ -85,6 +85,7 @@ export default function Contact({ history }) {
                className="form"
                name="contact"
                method="POST"
+               action="POST"
                data-netlify="true"
             >
                <input type="hidden" name="form-name" value="contact" />

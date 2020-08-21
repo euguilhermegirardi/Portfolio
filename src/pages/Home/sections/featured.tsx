@@ -159,7 +159,7 @@ export default function Featured() {
                         {spotify ? (
                            <div ref={ref} className="featured__proj-info">
                               <h4 className="featured__proj-info-title">
-                                 Project: Spotify - Class Component
+                                 Project: Spotify (web)
                               </h4>
                               <p className="featured__proj-info-p">
                                  An application where I could learn about
@@ -208,9 +208,7 @@ export default function Featured() {
                            target="_blank"
                            rel="noopener noreferrer"
                         >
-                           <h3 className="featured__project">
-                              Spotify - Class Component
-                           </h3>
+                           <h3 className="featured__project">Spotify (web)</h3>
                         </a>
                         <div className="featured__techs-container">
                            <span className="featured__techs">ReactJS</span>

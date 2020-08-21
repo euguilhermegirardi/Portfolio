@@ -31,7 +31,7 @@ export default function Main() {
                      <li className="main__li">
                         <div className="main__item">
                            <FaCheck className="main__svg" />
-                           <p className="main__p">React/Redux/Redux-Saga</p>
+                           <p className="main__p">ReactJS</p>
                         </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />
@@ -93,6 +93,10 @@ export default function Main() {
                   <small className="main__skill-small">(basic)</small>
                   <ul className="main__ul">
                      <li className="main__li">
+                        <div className="main__item">
+                           <FaCheck className="main__svg" />
+                           <p className="main__p">Redux-Saga</p>
+                        </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />
                            <p className="main__p">React Native</p>

@@ -29,6 +29,7 @@ export default function Contact({ history }) {
 
    const onSubmit = (data: IFormInputs) => {
       history.push("/success");
+      // console.log(data);
    };
 
    return (
@@ -85,8 +86,8 @@ export default function Contact({ history }) {
                className="form"
                name="contact"
                method="POST"
-               action="POST"
                data-netlify="true"
+               data-netlify-honeypot="bot-field"
             >
                <input type="hidden" name="form-name" value="contact" />
 

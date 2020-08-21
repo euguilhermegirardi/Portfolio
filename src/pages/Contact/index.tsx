@@ -85,7 +85,7 @@ export default function Contact({ history }) {
                onSubmit={handleSubmit(onSubmit)}
                className="form"
                name="contact"
-               method="POST"
+               action="POST"
                data-netlify="true"
                data-netlify-honeypot="bot-field"
             >

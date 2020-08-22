@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers";
@@ -29,7 +29,6 @@ export default function Contact({ history }) {
 
    const onSubmit = (data: IFormInputs) => {
       history.push("/success");
-      // console.log(data);
    };
 
    return (
@@ -85,6 +84,7 @@ export default function Contact({ history }) {
                onSubmit={handleSubmit(onSubmit)}
                className="form"
                name="contact"
+               method="POST"
                action="POST"
                data-netlify="true"
                data-netlify-honeypot="bot-field"

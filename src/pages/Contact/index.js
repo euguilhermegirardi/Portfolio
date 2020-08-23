@@ -8,16 +8,15 @@ import Nav from "../../components/Nav";
 import profile from "../../assets/Home/profile.jpeg";
 import Footer from "../../components/Footer";
 
-const encode = (data) => {
-   return Object.keys(data)
-      .map(
-         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-};
-
-
 export default function Contact({ history }) {
+   const encode = (data) => {
+      return Object.keys(data)
+         .map(
+            (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+         )
+         .join("&");
+   };
+
    const { handleSubmit, register, errors } = useForm();
    const onSubmit = (values, e) => {
       e.preventDefault();
@@ -106,7 +105,7 @@ export default function Contact({ history }) {
                            ref={register({
                               required: "Required",
                               pattern: {
-                                 value: /^[A-Z0-9]{3}/i,
+                                 maxLength: 20,
                                  message: "invalid name."
                               }
                            })}
@@ -148,8 +147,8 @@ export default function Contact({ history }) {
                            ref={register({
                               required: "Required",
                               pattern: {
-                                 value: /^[A-Z0-9]{2}/i,
-                                 message: "Please, at least 10 characters."
+                                 maxLength: 10000,
+                                 message: "Please, leave a message!"
                               }
                            })}
                         />

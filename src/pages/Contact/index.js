@@ -26,10 +26,11 @@ export default function Contact({ history }) {
 
       fetch("/", {
          method: "POST",
-         headers: { "Content-Type": "guilhermegirardi.netlify.app" },
+         headers: { "Content-Type": "application/x-www-form-urlencoded" },
          body: encode({ "form-name": "contact", values })
        })
-         .then(() => alert("Success!"))
+         // .then(() => history.push("/success"))
+         .then(() => alert('Success'))
          .catch(error => alert(error));
    }
 
@@ -86,7 +87,7 @@ export default function Contact({ history }) {
                onSubmit={handleSubmit(onSubmit)}
                className="form"
                name="contact"
-               autoComplete="off"
+               // autoComplete="off"
                method="POST"
                data-netlify="true"
             >

@@ -13,7 +13,7 @@ import pokedexImg from "../../../assets/Features/pokedex.png";
 import ClickOutside from "../../../components/ClickOutside";
 
 export default function Featured() {
-   const ref = useRef<HTMLDivElement>(null);
+   const ref = useRef(null);
 
    const [theSun, setTheSun] = useState(false);
    const [theIrish, setTheIrish] = useState(false);

@@ -10,7 +10,7 @@ import ClickOutside from "../../../components/ClickOutside";
 export default function Featured() {
    // Click outside to close
    // Create a ref that we add to the element for which we want to detect outside clicks
-   const ref = useRef<HTMLDivElement>(null);
+   const ref = useRef(null);
    // State for our modal
    const [theSun, setTheSun] = useState(false);
    const [spotify, setSpotify] = useState(false);

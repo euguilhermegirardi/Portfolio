@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers";
-import * as yup from "yup";
 
 import "../../scss/pages/Contact/_profile.scss";
 import "../../scss/pages/Contact/_form.scss";
@@ -10,26 +8,30 @@ import Nav from "../../components/Nav";
 import profile from "../../assets/Home/profile.jpeg";
 import Footer from "../../components/Footer";
 
-interface IFormInputs {
-   name: string;
-   email: string;
-   message: string;
-}
+const encode = (data) => {
+   return Object.keys(data)
+      .map(
+         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+};
 
-const SignupSchema = yup.object().shape({
-   name: yup.string().required(),
-   email: yup.string().required(),
-   message: yup.string().required(),
-});
 
 export default function Contact({ history }) {
-   const { register, handleSubmit, errors } = useForm<IFormInputs>({
-      resolver: yupResolver(SignupSchema),
-   });
+   const { handleSubmit, register, errors } = useForm();
+   const onSubmit = (values, e) => {
+      e.preventDefault();
 
-   const onSubmit = (data: IFormInputs) => {
-      history.push("/success");
-   };
+      console.log(values);
+
+      fetch("/", {
+         method: "POST",
+         headers: { "Content-Type": "guilhermegirardi.netlify.app" },
+         body: encode({ "form-name": "contact", values })
+       })
+         .then(() => alert("Success!"))
+         .catch(error => alert(error));
+   }
 
    return (
       <>
@@ -84,10 +86,9 @@ export default function Contact({ history }) {
                onSubmit={handleSubmit(onSubmit)}
                className="form"
                name="contact"
+               autoComplete="off"
                method="POST"
-               action="POST"
                data-netlify="true"
-               data-netlify-honeypot="bot-field"
             >
                <input type="hidden" name="form-name" value="contact" />
 
@@ -100,9 +101,14 @@ export default function Contact({ history }) {
                            type="text"
                            className="form__input"
                            placeholder="* Name"
-                           minLength={2}
                            name="name"
-                           ref={register}
+                           ref={register({
+                              required: "Required",
+                              pattern: {
+                                 value: /^[A-Z0-9]{3}/i,
+                                 message: "invalid name."
+                              }
+                           })}
                         />
                         {errors.name && (
                            <p className="form__error">{errors.name.message}</p>
@@ -116,7 +122,13 @@ export default function Contact({ history }) {
                            className="form__input"
                            placeholder="* Email"
                            name="email"
-                           ref={register}
+                           ref={register({
+                              required: "Required",
+                              pattern: {
+                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                 message: "invalid email address"
+                              }
+                           })}
                         />
                         {errors.email && (
                            <p className="form__error">{errors.email.message}</p>
@@ -132,7 +144,13 @@ export default function Contact({ history }) {
                            rows={10}
                            minLength={5}
                            name="message"
-                           ref={register}
+                           ref={register({
+                              required: "Required",
+                              pattern: {
+                                 value: /^[A-Z0-9]{2}/i,
+                                 message: "Please, at least 10 characters."
+                              }
+                           })}
                         />
                         {errors.message && (
                            <p className="form__error">

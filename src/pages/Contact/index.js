@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 
@@ -9,6 +9,10 @@ import profile from "../../assets/Home/profile.jpeg";
 import Footer from "../../components/Footer";
 
 export default function Contact({ history }) {
+   const [name, setName] = useState("");
+   const [email, setEmail] = useState("");
+   const [message, setMessage] = useState("");
+
    const encode = (data) => {
       return Object.keys(data)
          .map(
@@ -18,6 +22,7 @@ export default function Contact({ history }) {
    };
 
    const { handleSubmit, register, errors } = useForm();
+
    const onSubmit = (values, e) => {
       e.preventDefault();
 
@@ -26,12 +31,13 @@ export default function Contact({ history }) {
       fetch("/", {
          method: "POST",
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-         body: encode({ "form-name": "contact", values })
+         body: encode({ "form-name": "contact", name, email, message })
        })
-         // .then(() => history.push("/success"))
-         .then(() => alert('Success'))
+         .then(() => history.push("/success"))
          .catch(error => alert(error));
    }
+
+
 
    return (
       <>
@@ -109,6 +115,7 @@ export default function Contact({ history }) {
                                  message: "invalid name."
                               }
                            })}
+                           onChange={e => setName(e.target.value)}
                         />
                         {errors.name && (
                            <p className="form__error">{errors.name.message}</p>
@@ -129,6 +136,7 @@ export default function Contact({ history }) {
                                  message: "invalid email address"
                               }
                            })}
+                           onChange={e => setEmail(e.target.value)}
                         />
                         {errors.email && (
                            <p className="form__error">{errors.email.message}</p>
@@ -151,6 +159,7 @@ export default function Contact({ history }) {
                                  message: "Please, leave a message!"
                               }
                            })}
+                           onChange={e => setMessage(e.target.value)}
                         />
                         {errors.message && (
                            <p className="form__error">

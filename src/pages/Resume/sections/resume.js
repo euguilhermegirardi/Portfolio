@@ -10,10 +10,35 @@ export default function Resume() {
                <h3 className="summary__h3">Work Experience</h3>
 
                <div className="resume__timeline">
+               <article className="resume__article">
+                     <div className="resume__article-title">
+                        <h4 className="resume__article-h4">
+                           Front-End Developer
+                        </h4>
+                     </div>
+                     <div className="resume__article-company">
+                        <small className="resume__article-small">
+                           Easy Dish Ltd.
+                        </small>
+                     </div>
+                     <div className="resume__article-date">
+                        <span className="resume__article-span">
+                           2020 - Present
+                        </span>
+                     </div>
+
+                     <div className="resume__description">
+                        <p className="paragraph resume__p">
+                        Developing web and mobile app using ReactJS starting from model design.
+Working closely with the commercial and Back-End teams to identify and quickly resolve problems and bugs in the code.
+                        </p>
+                     </div>
+                  </article>
+
                   <article className="resume__article">
                      <div className="resume__article-title">
                         <h4 className="resume__article-h4">
-                           Frontend Developer
+                           Freelancer for Web Applications
                         </h4>
                      </div>
                      <div className="resume__article-company">
@@ -23,7 +48,7 @@ export default function Resume() {
                      </div>
                      <div className="resume__article-date">
                         <span className="resume__article-span">
-                           2018 - Present
+                           2018 - 2020
                         </span>
                      </div>
 

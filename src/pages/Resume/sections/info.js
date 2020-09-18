@@ -23,7 +23,7 @@ export default function Info() {
                <div className="info__container info__container--resume">
                   <div className="info__profile-container">
                      <h2 className="h2 info__h2">Guilherme Girardi</h2>
-                     <h3 className="info__h3">Frontend Developer</h3>
+                     <h3 className="info__h3">Front-End Developer</h3>
                      <div className="info__small-container">
                         <div className="info__icon-container">
                            <AiOutlineMail className="info__icon" />

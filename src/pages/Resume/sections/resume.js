@@ -29,7 +29,7 @@ export default function Resume() {
 
                      <div className="resume__description">
                         <p className="paragraph resume__p">
-                        Developing web and mobile app using ReactJS starting from model design.
+                        Developing a web application using ReactJS starting from model design.
 Working closely with the commercial and Back-End teams to identify and quickly resolve problems and bugs in the code.
                         </p>
                      </div>

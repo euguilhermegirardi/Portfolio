@@ -29,8 +29,8 @@ export default function Resume() {
 
                      <div className="resume__description">
                         <p className="paragraph resume__p">
-                        Developing a web application using ReactJS starting from model design.
-Working closely with the commercial and Back-End teams to identify and quickly resolve problems and bugs in the code.
+                           Developing a web application using ReactJS starting from model design.
+                           Working closely with the commercial and Back-End teams to identify and quickly resolve problems and bugs in the code.
                         </p>
                      </div>
                   </article>
@@ -38,7 +38,7 @@ Working closely with the commercial and Back-End teams to identify and quickly r
                   <article className="resume__article">
                      <div className="resume__article-title">
                         <h4 className="resume__article-h4">
-                           Freelancer for Web Applications
+                           Front-End Developer
                         </h4>
                      </div>
                      <div className="resume__article-company">

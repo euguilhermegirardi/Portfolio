@@ -39,10 +39,6 @@ export default function Main() {
                         </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />
-                           <p className="main__p">Gulp</p>
-                        </div>
-                        <div className="main__item">
-                           <FaCheck className="main__svg" />
                            <p className="main__p">CSS/SCSS</p>
                         </div>
                         <div className="main__item">
@@ -73,14 +69,6 @@ export default function Main() {
                            <FaCheck className="main__svg" />
                            <p className="main__p">MongoDB</p>
                         </div>
-                        <div className="main__item">
-                           <FaCheck className="main__svg" />
-                           <p className="main__p">SQLite</p>
-                        </div>
-                        <div className="main__item">
-                           <FaCheck className="main__svg" />
-                           <p className="main__p">Knex.js</p>
-                        </div>
                      </li>
                   </ul>
                </div>
@@ -99,11 +87,11 @@ export default function Main() {
                         </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />
-                           <p className="main__p">React Native</p>
+                           <p className="main__p">TypeScript</p>
                         </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />
-                           <p className="main__p">TypeScript</p>
+                           <p className="main__p">React Native</p>
                         </div>
                         <div className="main__item">
                            <FaCheck className="main__svg" />

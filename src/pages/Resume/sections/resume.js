@@ -10,10 +10,35 @@ export default function Resume() {
                <h3 className="summary__h3">Work Experience</h3>
 
                <div className="resume__timeline">
-               <article className="resume__article">
+                  <article className="resume__article">
                      <div className="resume__article-title">
                         <h4 className="resume__article-h4">
-                           Front-End Developer
+                           Freelance Front-End Developer (part-time)
+                        </h4>
+                     </div>
+                     <div className="resume__article-company">
+                        <small className="resume__article-small">
+                           Cognitic.ie
+                        </small>
+                     </div>
+                     <div className="resume__article-date">
+                        <span className="resume__article-span">
+                           2020 - Present
+                        </span>
+                     </div>
+
+                     <div className="resume__description">
+                        <p className="paragraph resume__p">
+                           Working with a team of developers to build user interface.
+                           Designing and implementing the front-end using ReactJS.
+                        </p>
+                     </div>
+                  </article>
+
+                  <article className="resume__article">
+                     <div className="resume__article-title">
+                        <h4 className="resume__article-h4">
+                           Front-End Developer (full-time)
                         </h4>
                      </div>
                      <div className="resume__article-company">
@@ -38,7 +63,7 @@ export default function Resume() {
                   <article className="resume__article">
                      <div className="resume__article-title">
                         <h4 className="resume__article-h4">
-                           Front-End Developer
+                           Self-Taught Front-End Developer
                         </h4>
                      </div>
                      <div className="resume__article-company">
@@ -89,35 +114,6 @@ export default function Resume() {
                            purchase of materials, preparation of weekly reports,
                            supervision of the work safety of all employees, and
                            review of projects.
-                        </p>
-                     </div>
-                  </article>
-
-                  <article className="resume__article">
-                     <div className="resume__article-title">
-                        <h4 className="resume__article-h4">
-                           Site Civil Engineer
-                        </h4>
-                     </div>
-                     <div className="resume__article-company">
-                        <small className="resume__article-small">
-                           CAPI Engineering
-                        </small>
-                     </div>
-                     <div className="resume__article-date">
-                        <span className="resume__article-span">
-                           2013 - 2015
-                        </span>
-                     </div>
-
-                     <div className="resume__description">
-                        <p className="paragraph resume__p">
-                           Follow-up of the services carried out in the works
-                           according to the execution project physical schedule,
-                           preparation of measurement, weekly and photographic
-                           reports, responsible for requesting material
-                           purchases, monitoring the financial schedule,
-                           supervising employee safety, and reviewing projects.
                         </p>
                      </div>
                   </article>
